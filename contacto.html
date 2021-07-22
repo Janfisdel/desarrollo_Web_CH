@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="estilos.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <title>Formulario de contacto</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img class="logo" src="imagenes/logo_tour.jpg" alt="logo" /> </a>
+            <nav>
+                <ul>
+                    <li class="menu"><a href="tours.html">Nuestros tours</a> </li>
+                    <li class="menu"><a href="galeria.html">Galeria</a> </li>
+                    <li class="menu"><a href="quienes_somos.html">Quienes somos</a></li>
+                </ul>
+          </nav>
+       
+        </header>
+        <h1 class="tituloPaginas">Comunicate con nosotros</h1>
+       
+        <form id="formulario" action="">
+            <fieldset>
+                 <legend> Consultas y contrataciones</legend>
+                 <div> <label for="name">Nombre y apellido:</label>
+                       <p><input type="text" name="name" placeholder="Nombre y apellido"/></p>
+                 </div>
+                 
+
+                <div> <label for="email">Correo electronico:</label>
+                    <p><input type="email" name="email" placeholder="intruduzca correo electronico"/></p>
+                </div>
+               
+
+                <div><label for="date">Fecha de inicio de Tour:</label>
+                 <p><input type="text" name="date" placeholder="DD/MM/AAAA"/></p>
+                </div>
+               
+
+                <div><label for="cantidad">Cantidad de personas:</label>
+                     <p> <input type="radio" name="cantidad"/> Una personas
+                         <input type="radio" name="cantidad"/>2-3 personas
+                         <input type="radio" name="cantidad"/> 4-5 personas
+                         <input type="radio" name="cantidad"/> mas de 5 personas </p>
+                </div>
+                
+
+                 <div> <label for="ciudad">Ciudades de interés:</label>
+                        <p> <input type="checkbox" name="bsas" value="1"/>Buenos Aires <br>
+                            <input type="checkbox" name="misiones" value="1"/>Misiones<br>
+                            <input type="checkbox" name="mendoza" value="1"/>Mendoza <br>
+                            <input type="checkbox" name="bariloche" value="1"/>Bariloche <br>
+                            <input type="checkbox" name="otras" value="1"/> Otras
+                </div>
+            
+                <div> <label for="guia">Elija un guía:</label>
+                        <p> <select name="guia">
+                                 <option value="Martin"> Martín</option>
+                                 <option value="Jana">Jana</option>
+                                 <option value="Daniela">Daniela </option>
+                                 <option value="Elizabeth">Elizabeth</option>
+                            </select></p>
+
+                </div>
+        
+                <div> <label for="comentario"> Dejanos un comentario:</label>
+                         <p> <textarea name="comentario" rows="10" cols="30" placeholder="Comentario"></textarea></p>
+                </div>
+                
+                
+                 <div> <input type="submit" value="enviar"/>
+                       <input type="reset" value="Limpiar formulario"/>
+                </div>
+
+
+    
+
+            </fieldset>
+    
+    
+        </form>
+    
+        
+        <footer>
+            <ul>
+                <li>Correo</li>
+                <li>Instagram</li>
+                <li>Whatsapp</li>
+            </ul>
+        </footer>
+
+    </body>
+</html>
