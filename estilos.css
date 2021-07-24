@@ -96,10 +96,10 @@ footer ul li{padding-right: 10rem;
             color: purple;
 }
 
-.imgPortada{width: 100%;
+.dimensionesCarousel{ width: 50%;
+                     margin:auto;
+
 }
-
-
 
 #botonesPortada{display: flex;
                 flex-direction: row;
