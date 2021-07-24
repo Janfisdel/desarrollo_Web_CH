@@ -3,25 +3,34 @@
     <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-     <link rel="stylesheet" href="estilos.css"/>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css"/>
+    <link rel="stylesheet" href="custom.css"/>
         <title>Nuestros Tours</title>
     </head>
     <body>
         <header>
-            <a href="index.html"><img class="logo" src="imagenes/logo_tour.jpg" alt="logo" /> </a>
-            <nav>
-                <ul>
-                    <li class="menu"><a href="galeria.html">Galeria</a> </li>
-                    <li class="menu"><a href="quienes_somos.html">Quienes somos</a> </li>
-                    <li class="menu"><a href="contacto.html">Contactanos</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/logo_tour.jpg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
+                      <a class="nav-link active" aria-current="page" href="quienes_somos.html">Quienes somos</a>
+                      <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </nav>
       
         </header>
 

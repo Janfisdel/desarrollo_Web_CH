@@ -61,9 +61,16 @@ header { background-color:lightpink;
       margin-left: 8rem;
 }
 
-nav {margin-right: 8rem;
+nav {
      font-size: 1.3rem;
 }
+
+
+
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        color: #ed143d;
+    }
 
 /*FOOTER*/
 footer ul{font-style: italic;
@@ -92,13 +99,6 @@ footer ul li{padding-right: 10rem;
 .imgPortada{width: 100%;
 }
 
-
-.menu{padding-right:1rem;
-      padding-left:1rem;
-}
-
-.menu a{color:crimson;
-}
 
 
 #botonesPortada{display: flex;
@@ -144,15 +144,10 @@ footer ul li{padding-right: 10rem;
               background-color: rgba(128, 128, 128, 0.322);
               color:purple;
               float:right;
-              transition: all 1s;
+              
 }
 
-.botonGaleria:hover{width:10rem;
-                    height: 2rem;
-}
 
-table{margin:5rem;
-}
 
 th {background-color: rgb(243, 139, 212);
 }
