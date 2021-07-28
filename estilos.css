@@ -55,16 +55,16 @@ header { background-color:lightpink;
          z-index: 1;
 }
 
-.logo{height: 5rem;
+/* .logo{height: 5rem;
       width: 5rem;
       border-radius: 7rem;
       margin-left: 8rem;
-}
+} */
 
 nav {
-     font-size: 1.3rem;
+        font-size: 1.3rem;
 }
-
+  
 
 
 
@@ -144,10 +144,9 @@ footer ul li{padding-right: 10rem;
               background-color: rgba(128, 128, 128, 0.322);
               color:purple;
               float:right;
-              
+             
 }
-
-
+/* volver a la transcion de los botones degaleria*/
 
 th {background-color: rgb(243, 139, 212);
 }
