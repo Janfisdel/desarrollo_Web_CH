@@ -119,6 +119,10 @@ footer ul li{padding-right: 10rem;
 }
 
 .boton a{color:maroon;
+} 
+
+.boton :hover{background-color: darkslateblue;
+        color:floralwhite;
 }
 
 /*TOURS*/
@@ -137,16 +141,24 @@ footer ul li{padding-right: 10rem;
 #sectionTour div{margin-bottom:5rem;
 }
 
-.botonGaleria{border-style:solid;
-              border-color:dimgray;
+.botonGaleria{
               border-radius: 1rem;
               padding:0.5rem;
               background-color: rgba(128, 128, 128, 0.322);
               color:purple;
               float:right;
+              width: 15rem;
+              text-align: center;
+              font-size: 1.1rem;
+              transition: all 2s;
              
 }
-/* volver a la transcion de los botones degaleria*/
+
+.botonGaleria:hover {font-size: 1.2rem;
+                     width: 20rem;
+
+
+}
 
 th {background-color: rgb(243, 139, 212);
 }
