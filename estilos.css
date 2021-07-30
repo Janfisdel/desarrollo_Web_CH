@@ -160,7 +160,8 @@ footer ul li{padding-right: 10rem;
 
 }
 
-th {background-color: rgb(243, 139, 212);
+.table-success{--bs-table-striped-bg: #f00d221c;
+
 }
 
 span{color:magenta;
@@ -210,7 +211,6 @@ span{color:magenta;
 }
 
 /*QUIENES SOMOS*/
-
 .perfilGuia {width:15rem;
              height: 20rem;
              border-radius: 1rem;
@@ -219,7 +219,7 @@ span{color:magenta;
 
 #gridGuias {display:grid;
             width:80%;
-            transform:translateX(8rem);
+            margin:auto;
             justify-content: center;
             justify-items:center;
             grid-template-areas: 
