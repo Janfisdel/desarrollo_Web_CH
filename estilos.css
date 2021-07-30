@@ -36,9 +36,19 @@ ol{margin:50px;
               color:royalblue;
               text-align:center;
               margin-bottom: 1rem;
+              animation-name: titulo--efecto;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 2s;
 }
 
-
+@keyframes titulo--efecto{
+        0% { font-size: 5rem;}
+        25%{ font-size: 6rem}
+        1s { font-size:7rem;}
+        75%{ font-size: 6rem;}
+        100%{ font-size:5rem;}
+}
 .guia, legend{font-size: 2rem;
               color:maroon;
 }
@@ -57,8 +67,8 @@ header { background-color:lightpink;
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
         color: #ed143d;
      font-size: 1.3rem;
-     padding-left: 8rem;
-     /*Separacion de enlaces del NAV*/
+     margin-left: 8rem;
+     
 }
 
 /*FOOTER*/
@@ -80,10 +90,21 @@ footer ul li{padding-right: 10rem;
 
 /*PORTADA*/
 
+.contenedor__titulo{ height: 8rem;
+
+}
+
 #tituloPpal{font-size: 5rem;
             text-align: center;
             color: purple;
+            animation-name: titulo--efecto;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 2s;
+
 }
+
+
 
 .dimensionesCarousel{ width: 50%;
                      margin:auto;
