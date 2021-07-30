@@ -1,109 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="estilos.css"/>
-       
 
-        <title>Formulario de contacto</title>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html">
-                    <img src="imagenes/logo_tour.jpg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                      <a class="nav-link active" aria-current="page" href="tours.html">Tours</a>
-                      <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
-                      <a class="nav-link active" aria-current="page" href="quienes_somos.html">Quienes somos</a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-       
-        </header>
-        <div class="contenedor__titulo"><h1 class="tituloPaginas">Contactanos</h1></div>
-       
-        <form id="formulario" action="">
-            <fieldset>
-                 <legend> Consultas y contrataciones</legend>
-                 <div> <label for="name">Nombre y apellido:</label>
-                       <p><input type="text" name="name" placeholder="Nombre y apellido"/></p>
-                 </div>
-                 
-
-                <div> <label for="email">Correo electronico:</label>
-                    <p><input type="email" name="email" placeholder="intruduzca correo electronico"/></p>
-                </div>
-               
-
-                <div><label for="date">Fecha de inicio de Tour:</label>
-                 <p><input type="text" name="date" placeholder="DD/MM/AAAA"/></p>
-                </div>
-               
-
-                <div><label for="cantidad">Cantidad de personas:</label>
-                     <p> <input type="radio" name="cantidad"/> Una personas
-                         <input type="radio" name="cantidad"/>2-3 personas
-                         <input type="radio" name="cantidad"/> 4-5 personas
-                         <input type="radio" name="cantidad"/> mas de 5 personas </p>
-                </div>
-                
-
-                 <div> <label for="ciudad">Ciudades de interés:</label>
-                        <p> <input type="checkbox" name="bsas" value="1"/>Buenos Aires <br>
-                            <input type="checkbox" name="misiones" value="1"/>Misiones<br>
-                            <input type="checkbox" name="mendoza" value="1"/>Mendoza <br>
-                            <input type="checkbox" name="bariloche" value="1"/>Bariloche <br>
-                            <input type="checkbox" name="otras" value="1"/> Otras
-                </div>
-            
-                <div> <label for="guia">Elija un guía:</label>
-                        <p> <select name="guia">
-                                 <option value="Martin"> Martín</option>
-                                 <option value="Jana">Jana</option>
-                                 <option value="Daniela">Daniela </option>
-                                 <option value="Elizabeth">Elizabeth</option>
-                            </select></p>
-
-                </div>
-        
-                <div> <label for="comentario"> Dejanos un comentario:</label>
-                         <p> <textarea name="comentario" rows="10" cols="30" placeholder="Comentario"></textarea></p>
-                </div>
-                
-                
-                 <div> <input type="submit" value="enviar"/>
-                       <input type="reset" value="Limpiar formulario"/>
-                </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css" />
 
 
-    
+  <title>Formulario de contacto</title>
+</head>
 
-            </fieldset>
-    
-    
-        </form>
-    
-        
-        <footer>
-            <ul>
-                <li>Correo</li>
-                <li>Instagram</li>
-                <li>Whatsapp</li>
-            </ul>
-        </footer>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="imagenes/logo_tour.jpg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="tours.html">Tours</a>
+            <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
+            <a class="nav-link active" aria-current="page" href="quienes_somos.html">Quienes somos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    </body>
+  </header>
+  <div class="contenedor__titulo">
+    <h1 class="tituloPaginas">Contactanos</h1>
+  </div>
+
+  <form id="formulario" action="">
+    <fieldset>
+      <legend> Consultas y contrataciones</legend>
+      <div> <label for="name">Nombre y apellido:</label>
+        <p><input type="text" name="name" placeholder="Nombre y apellido" /></p>
+      </div>
+
+
+      <div> <label for="email">Correo electronico:</label>
+        <p><input type="email" name="email" placeholder="intruduzca correo electronico" /></p>
+      </div>
+
+
+      <div><label for="date">Fecha de inicio de Tour:</label>
+        <p><input type="text" name="date" placeholder="DD/MM/AAAA" /></p>
+      </div>
+
+
+      <div><label for="cantidad">Cantidad de personas:</label>
+        <p> <input type="radio" name="cantidad" /> Una personas
+          <input type="radio" name="cantidad" />2-3 personas
+          <input type="radio" name="cantidad" /> 4-5 personas
+          <input type="radio" name="cantidad" /> mas de 5 personas
+        </p>
+      </div>
+
+
+      <div> <label for="ciudad">Ciudades de interés:</label>
+        <p> <input type="checkbox" name="bsas" value="1" />Buenos Aires <br>
+          <input type="checkbox" name="misiones" value="1" />Misiones<br>
+          <input type="checkbox" name="mendoza" value="1" />Mendoza <br>
+          <input type="checkbox" name="bariloche" value="1" />Bariloche <br>
+          <input type="checkbox" name="otras" value="1" /> Otras
+      </div>
+
+      <div> <label for="guia">Elija un guía:</label>
+        <p> <select name="guia">
+            <option value="Martin"> Martín</option>
+            <option value="Jana">Jana</option>
+            <option value="Daniela">Daniela </option>
+            <option value="Elizabeth">Elizabeth</option>
+          </select></p>
+
+      </div>
+
+      <div> <label for="comentario"> Dejanos un comentario:</label>
+        <p> <textarea name="comentario" rows="10" cols="30" placeholder="Comentario"></textarea></p>
+      </div>
+
+
+      <div> <input type="submit" value="enviar" />
+        <input type="reset" value="Limpiar formulario" />
+      </div>
+
+
+
+
+    </fieldset>
+
+
+  </form>
+
+
+  <footer>
+    <ul>
+      <li>Correo</li>
+      <li>Instagram</li>
+      <li>Whatsapp</li>
+    </ul>
+  </footer>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
 </html>
