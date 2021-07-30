@@ -46,31 +46,20 @@ ol{margin:50px;
 /*HEADER*/
 header { background-color:lightpink;
          top:0;
-         display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
-         justify-content: space-between;
+         
          width: 100%;
          position:fixed;
          z-index: 1;
 }
 
-/* .logo{height: 5rem;
-      width: 5rem;
-      border-radius: 7rem;
-      margin-left: 8rem;
-} */
-
-nav {
-        font-size: 1.3rem;
-}
-  
-
 
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
         color: #ed143d;
-    }
+     font-size: 1.3rem;
+     padding-left: 8rem;
+     /*Separacion de enlaces del NAV*/
+}
 
 /*FOOTER*/
 footer ul{font-style: italic;
@@ -288,7 +277,8 @@ span{color:magenta;
             background: linear-gradient(45deg, rgb(185, 169, 169), white, rgb(185, 169, 169));
             margin:3rem;
             text-align:left;
-            transform: translateX(12rem);
+            margin:auto;
+            /*SAQUE TRANSLATE POR MARGIN AUTO*/
 }
 
 input:focus {background-color: rgba(129, 228, 129, 0.63);
