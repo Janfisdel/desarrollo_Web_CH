@@ -204,28 +204,13 @@ span{color:magenta;
         color:maroon;
         font-size: 3rem;}
 
-#flexBsAs{display:flex;
+.flex{display:flex;
           flex-direction: row;
           flex-wrap: wrap;
         justify-content: center;
 }
 
-#flexMisio{display:flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;}
 
-#flexMendo{display:flex;
-           flex-direction: row;
-           flex-wrap: wrap;
-           justify-content: center;
-}
-
-#flexBarilo{display:flex;
-           flex-direction: row;
-           flex-wrap: wrap;
-           justify-content: center;
-}
 
 /*QUIENES SOMOS*/
 .perfilGuia {width:15rem;
