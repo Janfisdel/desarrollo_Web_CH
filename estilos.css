@@ -37,18 +37,25 @@ ol{margin:50px;
               text-align:center;
               margin-bottom: 1rem;
               animation-name: titulo--efecto;
-            animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
             animation-timing-function: ease-in;
             animation-duration: 2s;
 }
 
+/* En pantallas mas pequeñas los titulos no tienen animacion*/
+@media screen and (min-width:780px){
+
 @keyframes titulo--efecto{
         0% { font-size: 5rem;}
         25%{ font-size: 6rem}
-        1s { font-size:7rem;}
+        50% { font-size: 7rem;}
         75%{ font-size: 6rem;}
-        100%{ font-size:5rem;}
+        100%{ font-size: 5rem;}
 }
+       
+}
+
+
 .guia, legend{font-size: 2rem;
               color:maroon;
 }
@@ -63,7 +70,7 @@ header { background-color:lightpink;
 }
 
 
-
+/*Modificacion de NAV de Bootstrap*/
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
         color: #ed143d;
      font-size: 1.3rem;
@@ -103,7 +110,7 @@ footer ul li{padding-right: 10rem;
             animation-duration: 2s;
 
 }
-
+/*el keyframe se encuentra junto al titulo de todas las paginas mas arriba*/
 
 
 .dimensionesCarousel{ width: 50%;
@@ -169,7 +176,7 @@ footer ul li{padding-right: 10rem;
 
 
 }
-
+/*modificacion de colores de tabla de Bootstrap*/
 .table-success{--bs-table-striped-bg: #f00d221c;
 
 }
@@ -195,7 +202,7 @@ span{color:magenta;
 
 .ciudad{text-align: center;
         color:maroon;
-        font-size: 1.5rem;}
+        font-size: 3rem;}
 
 #flexBsAs{display:flex;
           flex-direction: row;
@@ -299,7 +306,6 @@ span{color:magenta;
             margin:3rem;
             text-align:left;
             margin:auto;
-            /*SAQUE TRANSLATE POR MARGIN AUTO*/
 }
 
 input:focus {background-color: rgba(129, 228, 129, 0.63);
