@@ -16,10 +16,11 @@
 
 <body>
   <header>
+    <!-- Menu de navegación entre páginas -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="imagenes/logo_tour.jpg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+          <img src="imagenes/logo_tour.jpg" alt="logo" width="40" height="40" class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,12 +35,13 @@
         </div>
       </div>
     </nav>
-
   </header>
+
   <div class="contenedor__titulo">
     <h1 class="tituloPaginas">Contactanos</h1>
   </div>
 
+<!--Formulario de contacto y consultas-->
   <form id="formulario" action="">
     <fieldset>
       <legend> Consultas y contrataciones</legend>
@@ -47,16 +49,13 @@
         <p><input type="text" name="name" placeholder="Nombre y apellido" /></p>
       </div>
 
-
       <div> <label for="email">Correo electronico:</label>
         <p><input type="email" name="email" placeholder="intruduzca correo electronico" /></p>
       </div>
 
-
       <div><label for="date">Fecha de inicio de Tour:</label>
         <p><input type="text" name="date" placeholder="DD/MM/AAAA" /></p>
       </div>
-
 
       <div><label for="cantidad">Cantidad de personas:</label>
         <p> <input type="radio" name="cantidad" /> Una personas
@@ -66,42 +65,34 @@
         </p>
       </div>
 
-
       <div> <label for="ciudad">Ciudades de interés:</label>
         <p> <input type="checkbox" name="bsas" value="1" />Buenos Aires <br>
-          <input type="checkbox" name="misiones" value="1" />Misiones<br>
-          <input type="checkbox" name="mendoza" value="1" />Mendoza <br>
-          <input type="checkbox" name="bariloche" value="1" />Bariloche <br>
-          <input type="checkbox" name="otras" value="1" /> Otras
+            <input type="checkbox" name="misiones" value="1" />Misiones<br>
+            <input type="checkbox" name="mendoza" value="1" />Mendoza <br>
+            <input type="checkbox" name="bariloche" value="1" />Bariloche <br>
+            <input type="checkbox" name="otras" value="1" /> Otras
+        </p>
       </div>
 
       <div> <label for="guia">Elija un guía:</label>
         <p> <select name="guia">
-            <option value="Martin"> Martín</option>
-            <option value="Jana">Jana</option>
-            <option value="Daniela">Daniela </option>
-            <option value="Elizabeth">Elizabeth</option>
-          </select></p>
-
+              <option value="Martin"> Martín</option>
+              <option value="Jana">Jana</option>
+              <option value="Daniela">Daniela </option>
+              <option value="Elizabeth">Elizabeth</option>
+            </select>
+        </p>
       </div>
 
       <div> <label for="comentario"> Dejanos un comentario:</label>
         <p> <textarea name="comentario" rows="10" cols="30" placeholder="Comentario"></textarea></p>
       </div>
 
-
       <div> <input type="submit" value="enviar" />
         <input type="reset" value="Limpiar formulario" />
       </div>
-
-
-
-
     </fieldset>
-
-
   </form>
-
 
   <footer>
     <ul>
