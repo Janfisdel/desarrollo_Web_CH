@@ -9,16 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="scss/style.css"/>
 
     <title>Nuestros Tours</title>
 </head>
 
 <body>
     <header>
+     <!-- Menu de navegación entre páginas -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="imagenes/logo_tour.jpg" alt="logo" width="30" height="24"
+                    <img src="imagenes/logo_tour.jpg" alt="logo" width="40" height="40"
                         class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,23 +33,20 @@
                         <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
                         <a class="nav-link active" aria-current="page" href="quienes_somos.html">Quienes somos</a>
                         <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
-
                     </div>
                 </div>
             </div>
         </nav>
-
     </header>
 
     <div class="contenedor__titulo">
         <h1 class="tituloPaginas"> Nuestros tours</h1>
     </div>
 
+    <!--Descripción de cada sitio turistico-->
     <section id="sectionTour">
-
         <h2 id="argentina">Argentina</h2>
         <div>
-
             <p> Ubicado en el extremo sur y sudeste América del Sur Argentina limita con Chile, Uruguay, Brasil,
                 Paraguay y Boliva.
                 <br>
@@ -85,15 +84,11 @@
                 Antártida.
                 <br><br>
                 Las gigantescas distancias exigen en la mayoría de los casos viajes en avión.
-
             </p>
-
         </div>
-
 
         <div>
             <h3 class="ciudad" id="tourbsas">Buenos Aires</h3>
-
             <p>Buenos Aires o la Ciudad Autónoma de Buenos Aires (CABA), es la ciudad capital de la República Argentina.
                 Es la mayor ciudad de Argentina, donde se concentra la mayoría de la población y de la actividad
                 económica.
@@ -134,16 +129,12 @@
                 Jorge Luis Borges y Julio Cortázar.
             </p>
 
-            <a class="botonGaleria" href="Galeria.html#BuenosAires">Buenos aires en fotos</a>
-
+            <!--estos botones direccionan a las imágenes de cada sitio turistico dentro de la página "galeria"-->
+            <a class="botonGaleria" href="galeria.html#BuenosAires">Buenos aires en fotos</a>
         </div>
 
-
-
         <div>
-
             <h3 class="ciudad" id="tourmisio">Misiones</h3>
-
             <p> Su capital y ciudad más poblada es Posadas. Está ubicada en el noreste del país, en la región del Norte
                 Grande
                 Argentino, limitando al norte y este con Brasil, al sur con Corrientes y al oeste con el río Paraná que
@@ -178,13 +169,10 @@
                 y 500 especies de aves. Es el hábitat del yaguareté y el lugar donde se concentra la mayor cantidad de
                 ejemplares
                 de esta especie en la Argentina.
-
             </p>
 
-            <a class="botonGaleria" href="Galeria.html#misiones">Misiones en fotos</a>
-
+            <a class="botonGaleria" href="galeria.html#misiones">Misiones en fotos</a>
         </div>
-
 
         <div>
             <h3 class="ciudad" id="tourmendo">Mendoza</h3>
@@ -219,13 +207,10 @@
                 En la periferia de la ciudad de Mendoza se encuentra el Parque General San Martín.<br>
                 También cuenta con numerosos sitios para acampar en cámpines agrestes, organizados o disfrutando una
                 experiencia de Glamping o camping de lujo.
-
             </p>
 
-            <a class="botonGaleria" href="Galeria.html#mendoza">Mendoza en fotos</a>
-
+            <a class="botonGaleria" href="galeria.html#mendoza">Mendoza en fotos</a>
         </div>
-
 
         <div>
             <h3 class="ciudad" id="tourbari">Bariloche</h3>
@@ -263,24 +248,23 @@
                 de egresados de los jóvenes que finalizan la secundaria.
 
             </p>
-            <a class="botonGaleria" href="Galeria.html#bariloche">Bariloche en fotos</a>
 
+            <a class="botonGaleria" href="galeria.html#bariloche">Bariloche en fotos</a>
         </div>
-
     </section>
 
+    <!--Tabla de Bootstrap con descripción de tours y precios-->
     <section class="container">
         <table class="table table-success table-striped">
-
             <tr>
                 <th>Provincia</th>
                 <th>Descripción</th>
                 <th>Precio</th>
-
             </tr>
+
             <tr>
                 <th>Buenos Aires</th>
-                <td> Tour de tres dias. <br>
+                <td> Tour de tres dias. 
                     <ol>
                         <li> Visitaremos el centro de la ciudad.
                             Veremos el obelisco, el cabildo, la casa rosada y la plaza de mayo.<br>
@@ -291,12 +275,12 @@
                         <li>Recorreremos Palermo, los bares y restaurantes mas tipicos de la ciudad.</li>
                     </ol>
                 </td>
-                <td class="precio">$5000</td>
-
+                <td>$5000</td>
             </tr>
+
             <tr>
                 <th>Misiones</th>
-                <td> Tour de tres dias. <br>
+                <td> Tour de tres dias.
                     <ol>
                         <li> Visitaremos las cataratas durante el dia. Visitaremos el parque nacional Iguazú y veremos
                             las cataratas
@@ -305,25 +289,24 @@
                         <li>Visitaremos la triple frontera y comercios tipicos del lugar.</li>
                     </ol>
                 </td>
-                <td class="precio">$8000</td>
-
+                <td>$8000</td>
             </tr>
+
             <tr>
                 <th>Mendoza</th>
-                <td> Tour de tres dias. <br>
+                <td> Tour de tres dias. 
                     <ol>
                         <li> Ruta del vino: Visita a bodegas y restaurantes tipicos del lugar. </li>
                         <li>Turismo aventura en la ciudad de San Rafael.</li>
                         <li>Casco historico en la capital de la provincia.</li>
                     </ol>
                 </td>
-                <td class="precio">$10000</td>
-
+                <td>$10000</td>
             </tr>
 
             <tr>
                 <th>Bariloche</th>
-                <td> Tour de cuatro dias. <br>
+                <td> Tour de cuatro dias.
                     <ol>
                         <li> Casco historico y recorrido por la ciudad. </li>
                         <li> Día de esqui. visitaremos el cerro Catedral y el cerro Otto</li>
@@ -331,8 +314,7 @@
                         <li>Recorreremos chocolaterias y cervecerias famosas.</li>
                     </ol>
                 </td>
-                <td class="precio">$10000</td>
-
+                <td>$10000</td>
             </tr>
 
             <th></th>
@@ -341,12 +323,8 @@
             </td>
 
             <td></td>
-
-
         </table>
-
     </section>
-
 
     <footer>
         <ul>

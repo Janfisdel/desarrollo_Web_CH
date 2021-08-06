@@ -1,0 +1,146 @@
+/*header y footer tienen el mismo color de fondo*/
+header footer {
+  background-color: lightpink;
+}
+
+/* todos los titulos tienen el mismo centrado y animacion*/
+/* titulo principal*/
+#tituloPpal, .tituloPaginas {
+  text-align: center;
+  margin-bottom: 1rem;
+  -webkit-animation-name: titulo--efecto;
+          animation-name: titulo--efecto;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+/*titulos de cada pagina secundaria*/
+.tituloPaginas {
+  font-size: 3rem;
+  color: royalblue;
+}
+
+/*todas las descripciones de los guias son iguales*/
+#guias__martin--descripcion, #guias__jana--descripcion, #guias__daniela--descripcion, #guias__elizabeth--descripcion {
+  background-color: rgba(216, 112, 147, 0.445);
+  width: 17rem;
+  padding: 0rem 2rem 0rem 2rem;
+  border-radius: 1rem;
+}
+
+#guias__jana--descripcion {
+  grid-area: descripcionJ;
+}
+
+#guias__daniela--descripcion {
+  grid-area: descripcionD;
+}
+
+#guias__elizabeth--descripcion {
+  grid-area: descripcionE;
+}
+
+/*el flex de lo botones de portada y el de galeria son similares*/
+.flex, #botonesPortada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#botonesPortada {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+/* algunos nesting*/
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a :hover {
+  background-color: darkslateblue;
+  color: floralwhite;
+}
+
+footer ul {
+  font-style: italic;
+  background-color: lightpink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer ul li {
+  padding-right: 10rem;
+  padding-left: 10rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.boton {
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: black;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: rgba(210, 105, 30, 0.418);
+}
+
+.boton a {
+  color: maroon;
+}
+
+.boton :hover {
+  background-color: darkslateblue;
+  color: floralwhite;
+}
+
+.botonGaleria {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(128, 128, 128, 0.322);
+  color: purple;
+  float: right;
+  width: 15rem;
+  text-align: center;
+  font-size: 1.1rem;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.botonGaleria :hover {
+  font-size: 1.2rem;
+  width: 20rem;
+}
+/*# sourceMappingURL=style.css.map */

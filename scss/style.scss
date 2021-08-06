@@ -1,0 +1,135 @@
+/*header y footer tienen el mismo color de fondo*/
+$bg-paleta: lightpink;
+
+header footer {
+  background-color: $bg-paleta;
+}
+
+/* todos los titulos tienen el mismo centrado y animacion*/
+/* titulo principal*/
+#tituloPpal {
+  text-align: center;
+  margin-bottom: 1rem;
+  animation-name: titulo--efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+/*titulos de cada pagina secundaria*/
+.tituloPaginas {
+  font-size: 3rem;
+  color: royalblue;
+  @extend #tituloPpal;
+}
+
+
+
+/*todas las descripciones de los guias son iguales*/
+#guias__martin--descripcion {
+  background-color: rgba(216, 112, 147, 0.445);
+  width: 17rem;
+  padding: 0rem 2rem 0rem 2rem;
+  border-radius: 1rem;
+}
+
+#guias__jana--descripcion {
+  grid-area: descripcionJ;
+  @extend #guias__martin--descripcion;
+}
+
+#guias__daniela--descripcion {
+  grid-area: descripcionD;
+  @extend #guias__martin--descripcion;
+}
+
+#guias__elizabeth--descripcion {
+  grid-area: descripcionE;
+  @extend #guias__martin--descripcion;
+}
+
+/*el flex de lo botones de portada y el de galeria son similares*/
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#botonesPortada{
+  @extend .flex;
+  align-items: stretch;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+/* algunos nesting*/
+
+ul {
+  list-style-type: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+
+  :hover {
+    background-color: darkslateblue;
+    color: floralwhite;
+  }
+}
+
+footer ul {
+  font-style: italic;
+  background-color: lightpink;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+
+  li {
+    padding-right: 10rem;
+    padding-left: 10rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+
+.boton {
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: black;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: rgba(210, 105, 30, 0.418);
+
+  a {
+    color: maroon;
+  }
+
+  :hover {
+    background-color: darkslateblue;
+    color: floralwhite;
+  }
+}
+
+.botonGaleria {
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(128, 128, 128, 0.322);
+  color: purple;
+  float: right;
+  width: 15rem;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: all 2s;
+
+  :hover {
+    font-size: 1.2rem;
+    width: 20rem;
+    
+  }
+}

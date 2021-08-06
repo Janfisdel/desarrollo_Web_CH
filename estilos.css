@@ -1,315 +1,248 @@
-*{margin: 0;
+* {
+  margin: 0;
   padding: 0;
 }
 
 /* GENERAL*/
-html{font-size: 16px;
+html {
+  font-size: 16px;
 }
 
-body{font-family: 'Roboto', sans-serif;
-     background:radial-gradient( pink, lightblue);
-     background-size: cover;
-     color:black;
-     line-height: 1.6;
-     margin-top:7rem;
+body {
+  font-family: "Roboto", sans-serif;
+  background: radial-gradient(pink, lightblue);
+  background-size: cover;
+  color: black;
+  line-height: 1.6;
+  margin-top: 7rem;
 }
 
-ul{list-style-type: none;
+ol {
+  margin: 50px;
 }
-
-ul li{display: inline-block;
-}
-
-a {text-decoration: none;
-   font-weight: bold;
-}
-
 
 a:hover{background-color: darkslateblue;
-        color:floralwhite;
-}
-
-ol{margin:50px;
-}
-
-.tituloPaginas{font-size: 3rem;
-              color:royalblue;
-              text-align:center;
-              margin-bottom: 1rem;
-              animation-name: titulo--efecto;
-              animation-iteration-count: infinite;
-            animation-timing-function: ease-in;
-            animation-duration: 2s;
+  color:floralwhite;
 }
 
 /* En pantallas mas pequeñas los titulos no tienen animacion*/
-@media screen and (min-width:780px){
-
-@keyframes titulo--efecto{
-        0% { font-size: 5rem;}
-        25%{ font-size: 6rem}
-        50% { font-size: 7rem;}
-        75%{ font-size: 6rem;}
-        100%{ font-size: 5rem;}
+@media screen and (min-width: 780px) {
+  @keyframes titulo--efecto {
+    0% {
+      font-size: 5rem;
+    }
+    25% {
+      font-size: 6rem;
+    }
+    50% {
+      font-size: 7rem;
+    }
+    75% {
+      font-size: 6rem;
+    }
+    100% {
+      font-size: 5rem;
+    }
+  }
 }
-       
-}
 
-
-.guia, legend{font-size: 2rem;
-              color:maroon;
+.guia,
+legend {
+  font-size: 2rem;
+  color: maroon;
 }
 
 /*HEADER*/
-header { background-color:lightpink;
-         top:0;
-         
-         width: 100%;
-         position:fixed;
-         z-index: 1;
+header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
-
 
 /*Modificacion de NAV de Bootstrap*/
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-        color: #ed143d;
-     font-size: 1.3rem;
-     margin-left: 8rem;
-     
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #ed143d;
+  font-size: 1.3rem;
+  margin-left: 8rem;
+  
 }
 
-/*FOOTER*/
-footer ul{font-style: italic;
-          background-color: lightpink;
-          display: flex;
-          justify-content: center;
-          margin-top:5rem;
-          flex-wrap: wrap;
-}
 
-    
-footer ul li{padding-right: 10rem;
-             padding-left:10rem;
-             font-size: 1.3rem;
-             font-weight: bold;
-}
-    
 
 /*PORTADA*/
 
-.contenedor__titulo{ height: 8rem;
-
+.contenedor__titulo {
+  height: 8rem;
 }
 
-#tituloPpal{font-size: 5rem;
-            text-align: center;
-            color: purple;
-            animation-name: titulo--efecto;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in;
-            animation-duration: 2s;
-
+#tituloPpal {
+  font-size: 5rem;
+  color: purple;
 }
 /*el keyframe se encuentra junto al titulo de todas las paginas mas arriba*/
 
-
-.dimensionesCarousel{ width: 50%;
-                     margin:auto;
-
-}
-
-#botonesPortada{display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                align-items:stretch;
-                margin-bottom: 2rem;
-                margin-top:2rem;
-}
-
-.boton{border-style:solid;
-       border-radius: 1rem;
-       border-color: black;
-       padding:1rem;
-       font-size: 1.5rem;
-       background-color: rgba(210, 105, 30, 0.418);
-}
-
-.boton a{color:maroon;
-} 
-
-.boton :hover{background-color: darkslateblue;
-        color:floralwhite;
+.dimensionesCarousel {
+  width: 50%;
+  margin: auto;
 }
 
 /*TOURS*/
 
-#argentina{font-size: 2rem;
-           color:whitesmoke;
-           background-color: rgb(33, 78, 94);
-           width: 9rem;
-           margin-bottom: 2rem;
+#argentina {
+  font-size: 2rem;
+  color: whitesmoke;
+  background-color: rgb(33, 78, 94);
+  width: 9rem;
+  margin-bottom: 2rem;
 }
 
-#sectionTour {margin-left:5rem;
-              margin-right: 5rem;
+#sectionTour {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
-#sectionTour div{margin-bottom:5rem;
+#sectionTour div {
+  margin-bottom: 5rem;
 }
+
 
 .botonGaleria{
-              border-radius: 1rem;
-              padding:0.5rem;
-              background-color: rgba(128, 128, 128, 0.322);
-              color:purple;
-              float:right;
-              width: 15rem;
-              text-align: center;
-              font-size: 1.1rem;
-              transition: all 2s;
-             
+  border-radius: 1rem;
+  padding:0.5rem;
+  background-color: rgba(128, 128, 128, 0.322);
+  color:purple;
+  float:right;
+  width: 15rem;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: all 2s;
+ 
 }
 
 .botonGaleria:hover {font-size: 1.2rem;
-                     width: 20rem;
-
+         width: 20rem;
+         
 
 }
 /*modificacion de colores de tabla de Bootstrap*/
-.table-success{--bs-table-striped-bg: #f00d221c;
-
+.table-success {
+  --bs-table-striped-bg: #f00d221c;
 }
 
-span{color:magenta;
+span {
+  color: magenta;
 }
 
-#consultanos{font-weight: bold;
-             text-align: center;
+#consultanos {
+  font-weight: bold;
+  text-align: center;
 }
 
 /*GALERIA*/
-.imgGaleria {width: 12rem;
-             height: 12rem;
-             border-radius: 2rem;
-             transition: height 1s, width 1s;
+
+.ciudad {
+  text-align: center;
+  color: maroon;
+  font-size: 3rem;
 }
 
-.imgGaleria:hover {height:20rem;
-                   width:20rem;
+.imgGaleria{
+  width:12rem;
+  height:12rem;
 
+  border-radius: 2rem;
+  transition: height 1s, width 1s;
 }
 
-.ciudad{text-align: center;
-        color:maroon;
-        font-size: 3rem;}
-
-#flexBsAs{display:flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-        justify-content: center;
-}
-
-#flexMisio{display:flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;}
-
-#flexMendo{display:flex;
-           flex-direction: row;
-           flex-wrap: wrap;
-           justify-content: center;
-}
-
-#flexBarilo{display:flex;
-           flex-direction: row;
-           flex-wrap: wrap;
-           justify-content: center;
+.imgGaleria:hover{
+  width: 20rem;
+  height: 20rem;
 }
 
 /*QUIENES SOMOS*/
-.perfilGuia {width:15rem;
-             height: 20rem;
-             border-radius: 1rem;
-             margin-bottom: 2rem;
+#guias {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  justify-items: center;
+  grid-template-areas:
+    "presentacionGuias presentacionGuias "
+    "nombreM  nombreM"
+    "martin descripcionM"
+    "nombreJ nombreJ"
+    "jana descripcionJ"
+    "nombreD nombreD"
+    "daniela descripcionD"
+    "nombreE nombreE"
+    "elizabeth descripcionE";
+}
+#guias div {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.guias__foto--dimensiones {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+#guias__presentacion {
+  grid-area: presentacionGuias;
+}
+#guias__nombre--martin {
+  grid-area: nombreM;
+}
+#guias__foto--martin {
+  grid-area: martin;
+}
+#guias__martin--descripcion {
+  grid-area: descripcionM;
+
 }
 
-#gridGuias {display:grid;
-            width:80%;
-            margin:auto;
-            justify-content: center;
-            justify-items:center;
-            grid-template-areas: 
-            "presentacionGuias presentacionGuias "
-            "nombreM  nombreM"
-            "martin descripcionM"
-            "nombreJ nombreJ"
-            "jana descripcionJ"
-            "nombreD nombreD"
-            "daniela descripcionD"
-            "nombreE nombreE"
-             "elizabeth descripcionE";        
-    
+#guias__nombre--jana {
+  grid-area: nombreJ;
 }
-#gridGuias div{padding-left: 2rem;
-               padding-right: 2rem;
+#guias__foto--jana {
+  grid-area: jana;
 }
 
-#presentacionGuias {grid-area: presentacionGuias;
+#guias__nombre--daniela {
+  grid-area: nombreD;
 }
-#nombreMartin{ grid-area:nombreM;
-}
-#martin{ grid-area: martin;
-}
-#descripcionM {grid-area: descripcionM;
-               background-color: rgba(216, 112, 147, 0.445);
-               width: 17rem;
-               padding:0rem 2rem 0rem 2rem;
-               border-radius: 1rem;
+#guias__foto--daniela {
+  grid-area: daniela;
 }
 
-#nombreJana{ grid-area:nombreJ;
+#guias__nombre--elizabeth {
+  grid-area: nombreE;
 }
-#jana{ grid-area: jana;
+#guias__foto--elizabeth {
+  grid-area: elizabeth;
 }
-#descripcionJ {grid-area: descripcionJ;
-              background-color: rgba(216, 112, 147, 0.445);
-              width: 17rem;
-              padding:0rem 2rem 0rem 2rem;
-              border-radius: 1rem;
-}
-#nombreDaniela{grid-area:nombreD;
-}
-#daniela{ grid-area: daniela;
-}
-#descripcionD{grid-area:descripcionD;
-              background-color: rgba(216, 112, 147, 0.445);
-              width: 17rem;
-              padding:0rem 2rem 0rem 2rem;
-              border-radius: 1rem;
-}
-#nombreElizabeth{grid-area:nombreE;
-}
-#elizabeth{ grid-area: elizabeth;
-}
-#descripcionE{grid-area:descripcionE;
-              background-color: rgba(216, 112, 147, 0.445);
-              width: 17rem;
-              padding:0rem 2rem 0rem 2rem;
-              border-radius: 1rem;}
-
 
 /*CONTACTO*/
 
-#formulario{width: 50%;
-            background: linear-gradient(45deg, rgb(185, 169, 169), white, rgb(185, 169, 169));
-            margin:3rem;
-            text-align:left;
-            margin:auto;
+#formulario {
+  width: 50%;
+  background: linear-gradient(
+    45deg,
+    rgb(185, 169, 169),
+    white,
+    rgb(185, 169, 169)
+  );
+
+  text-align: left;
+  margin: auto;
 }
 
-input:focus {background-color: rgba(129, 228, 129, 0.63);
+input:focus {
+  background-color: rgba(129, 228, 129, 0.63);
 }
 
-fieldset {padding-left: 5rem;
+fieldset {
+  padding-left: 5rem;
 }
