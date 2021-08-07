@@ -17,6 +17,7 @@ body {
   margin-top: 7rem;
 }
 
+<<<<<<< HEAD
 ul {
   list-style-type: none;
 }
@@ -49,6 +50,14 @@ ol {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
   animation-duration: 2s;
+=======
+ol {
+  margin: 50px;
+}
+
+a:hover{background-color: darkslateblue;
+  color:floralwhite;
+>>>>>>> sass
 }
 
 /* En pantallas mas pequeñas los titulos no tienen animacion*/
@@ -72,7 +81,10 @@ ol {
   }
 }
 
+<<<<<<< HEAD
 /*nombres de guias y del formulario*/
+=======
+>>>>>>> sass
 .guia,
 legend {
   font-size: 2rem;
@@ -81,6 +93,7 @@ legend {
 
 /*HEADER*/
 header {
+<<<<<<< HEAD
   background-color: lightpink;
   top: 0;
 
@@ -89,12 +102,21 @@ header {
   z-index: 1;
 }
 
+=======
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+>>>>>>> sass
 /*Modificacion de NAV de Bootstrap*/
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link {
   color: #ed143d;
   font-size: 1.3rem;
   margin-left: 8rem;
+<<<<<<< HEAD
 }
 
 /*FOOTER*/
@@ -115,24 +137,38 @@ footer ul li {
 }
 
 /*PORTADA*/
+=======
+  
+}
+
+
+
+/*PORTADA*/
+
+>>>>>>> sass
 .contenedor__titulo {
   height: 8rem;
 }
 
 #tituloPpal {
   font-size: 5rem;
+<<<<<<< HEAD
   text-align: center;
   color: purple;
   animation-name: titulo--efecto;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
   animation-duration: 2s;
+=======
+  color: purple;
+>>>>>>> sass
 }
 /*el keyframe se encuentra junto al titulo de todas las paginas mas arriba*/
 
 .dimensionesCarousel {
   width: 50%;
   margin: auto;
+<<<<<<< HEAD
 }
 
 #botonesPortada {
@@ -161,6 +197,8 @@ footer ul li {
 .boton :hover {
   background-color: darkslateblue;
   color: floralwhite;
+=======
+>>>>>>> sass
 }
 
 /*TOURS*/
@@ -182,16 +220,27 @@ footer ul li {
   margin-bottom: 5rem;
 }
 
+<<<<<<< HEAD
 .botonGaleria {
   border-radius: 1rem;
   padding: 0.5rem;
   background-color: rgba(128, 128, 128, 0.322);
   color: purple;
   float: right;
+=======
+
+.botonGaleria{
+  border-radius: 1rem;
+  padding:0.5rem;
+  background-color: rgba(128, 128, 128, 0.322);
+  color:purple;
+  float:right;
+>>>>>>> sass
   width: 15rem;
   text-align: center;
   font-size: 1.1rem;
   transition: all 2s;
+<<<<<<< HEAD
 }
 
 .botonGaleria:hover {
@@ -199,6 +248,16 @@ footer ul li {
   width: 20rem;
 }
 
+=======
+ 
+}
+
+.botonGaleria:hover {font-size: 1.2rem;
+         width: 20rem;
+         
+
+}
+>>>>>>> sass
 /*modificacion de colores de tabla de Bootstrap*/
 .table-success {
   --bs-table-striped-bg: #f00d221c;
@@ -214,6 +273,7 @@ span {
 }
 
 /*GALERIA*/
+<<<<<<< HEAD
 .imgGaleria {
   width: 12rem;
   height: 12rem;
@@ -225,6 +285,8 @@ span {
   height: 20rem;
   width: 20rem;
 }
+=======
+>>>>>>> sass
 
 .ciudad {
   text-align: center;
@@ -232,6 +294,7 @@ span {
   font-size: 3rem;
 }
 
+<<<<<<< HEAD
 .flex {
   display: flex;
   flex-direction: row;
@@ -248,6 +311,23 @@ span {
 }
 
 #gridGuias {
+=======
+.imgGaleria{
+  width:12rem;
+  height:12rem;
+
+  border-radius: 2rem;
+  transition: height 1s, width 1s;
+}
+
+.imgGaleria:hover{
+  width: 20rem;
+  height: 20rem;
+}
+
+/*QUIENES SOMOS*/
+#guias {
+>>>>>>> sass
   display: grid;
   width: 80%;
   margin: auto;
@@ -264,6 +344,7 @@ span {
     "nombreE nombreE"
     "elizabeth descripcionE";
 }
+<<<<<<< HEAD
 
 #gridGuias div {
   padding-left: 2rem;
@@ -288,8 +369,31 @@ span {
   width: 17rem;
   padding: 0rem 2rem 0rem 2rem;
   border-radius: 1rem;
+=======
+#guias div {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
+.guias__foto--dimensiones {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+#guias__presentacion {
+  grid-area: presentacionGuias;
+}
+#guias__nombre--martin {
+  grid-area: nombreM;
+}
+#guias__foto--martin {
+  grid-area: martin;
+>>>>>>> sass
+}
+#guias__martin--descripcion {
+  grid-area: descripcionM;
 
+<<<<<<< HEAD
 #nombreJana {
   grid-area: nombreJ;
 }
@@ -339,6 +443,33 @@ span {
 }
 
 /*CONTACTO*/
+=======
+}
+
+#guias__nombre--jana {
+  grid-area: nombreJ;
+}
+#guias__foto--jana {
+  grid-area: jana;
+}
+
+#guias__nombre--daniela {
+  grid-area: nombreD;
+}
+#guias__foto--daniela {
+  grid-area: daniela;
+}
+
+#guias__nombre--elizabeth {
+  grid-area: nombreE;
+}
+#guias__foto--elizabeth {
+  grid-area: elizabeth;
+}
+
+/*CONTACTO*/
+
+>>>>>>> sass
 #formulario {
   width: 50%;
   background: linear-gradient(
@@ -347,7 +478,11 @@ span {
     white,
     rgb(185, 169, 169)
   );
+<<<<<<< HEAD
   margin: 3rem;
+=======
+
+>>>>>>> sass
   text-align: left;
   margin: auto;
 }
