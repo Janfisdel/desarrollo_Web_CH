@@ -1,0 +1,14 @@
+/*GALERIA*/
+
+.imgGaleria{
+    width:12rem;
+    height: 12rem;
+    border-radius: 2rem;
+    transition: height 1s, width 1s;
+
+    &:hover {
+        width:20rem;
+        height:20rem;
+    }
+}
+

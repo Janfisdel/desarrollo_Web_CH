@@ -1,0 +1,16 @@
+/*el flex de lo botones de portada y el de galeria son similares*/
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  #botonesPortada {
+    @extend .flex;
+    align-items: stretch;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  

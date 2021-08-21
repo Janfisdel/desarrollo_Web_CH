@@ -1,0 +1,27 @@
+/*PORTADA*/
+
+.contenedor__titulo{
+    height:8rem;
+}
+
+.dimensionesCarousel{
+    width: 50%;
+    margin:auto;  
+}
+
+.btn-primary{
+    font-size: 2rem;
+    color: $color_titulos;
+    background-color: $bg-secundario;
+    border-color: $bg-secundario;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    &:hover{
+        background-color: $bg-principal;
+        color:$color-titulos;
+        border-color: $bg-secundario;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+}
+

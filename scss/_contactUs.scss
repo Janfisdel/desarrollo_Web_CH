@@ -1,0 +1,25 @@
+/*CONTACTO*/
+
+#formulario {
+  width: 50%;
+  background: linear-gradient(
+    45deg,
+    rgb(185, 169, 169),
+    white,
+    rgb(185, 169, 169)
+  );
+  text-align: left;
+  margin: auto;
+}
+
+fieldset {
+  text-align: center;
+}
+
+input {
+  border-radius: 0.3rem;
+
+  &:focus {
+    background-color: $bg-secundario;
+  }
+}

@@ -14,15 +14,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css" />
-  <link rel="stylesheet" href="scss/style.css" />
-
+  <link rel="stylesheet" href="scss/newstyles.css"/>
   <title>Touristas | Home</title>
 </head>
 
 <body>
   <header>
-    <!-- Menu de navegación entre páginas -->
+    <!-- Menú de navegación entre páginas -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand">
@@ -44,11 +42,12 @@
     </nav>
   </header>
 
-  <div class="contenedor__titulo">
+  <!--Titulo de página-->
+ <div class="contenedor__titulo">
     <h1 id="tituloPpal">TOURISTAS</h1>
   </div>
 
-  <!--Carrousel de bootstrap con imágenes de lugares turisticos-->
+  <!--Carrousel de bootstrap con imágenes de lugares turísticos-->
   <div class="dimensionesCarousel">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -65,20 +64,23 @@
     </div>
   </div>
 
-  <!--Flex para los botones que direccionan a la descripción de cada sitio turistico-->
-
-  <ul id="botonesPortada">
-    <li class="boton"><a href="tours.html#tourbsas">Buenos Aires</a> </li>
-    <li class="boton"><a href="tours.html#tourmisio">Misiones</a> </li>
-    <li class="boton"><a href="tours.html#tourmendo">Mendoza</a> </li>
-    <li class="boton"><a href="tours.html#tourbari"> Rio Negro - Bariloche</a> </li>
+<!--Botones hacia los destinos-->
+<div>
+  <ul id="botonesPortada"> 
+    
+    <li><a href="tours.html#tourbsas"><button type="button" class="btn btn-primary">Buenos Aires</button></a></li>
+    <li><a href="tours.html#tourmisio"><button type="button" class="btn btn-primary">Misiones</button></a></li>
+    <li><a href="tours.html#tourmendo"><button type="button" class="btn btn-primary">Mendoza</button></a></li>
+    <li><a href="tours.html#tourbari"><button type="button" class="btn btn-primary">Río Negro - Bariloche</button></a></li>
   </ul>
+</div>
 
+<!-- Comienzo de footer -->
   <footer>
     <ul>
-      <li>Correo</li>
-      <li>Instagram</li>
-      <li>Whatsapp</li>
+      <li><img class="icons"src="imagenes/icons/instagram.svg"></li>
+      <li><img class="icons"src="imagenes/icons/mail.svg"></li>
+      <li> <img class="icons"src="imagenes/icons/whatsapp.svg"></li>
     </ul>
   </footer>
 

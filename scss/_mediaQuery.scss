@@ -1,0 +1,68 @@
+/*MEDIA QUERIES*/
+
+/* En pantallas mas pequeñas los titulos no tienen animacion*/
+@media screen and (min-width: 780px) {
+    @keyframes titulo--efecto {
+      0% {
+        font-size: 5rem;
+      }
+      25% {
+        font-size: 6rem;
+      }
+      50% {
+        font-size: 7rem;
+      }
+      75% {
+        font-size: 6rem;
+      }
+      100% {
+        font-size: 5rem;
+      }
+    
+  }
+  }
+  /*En pantallas pequeñas disminuye el tamaño de los titulos*/
+  @media screen and (max-width: 600px) {
+    #tituloPpal, .tituloPaginas{
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
+
+
+  /*imagenes de la galeria disminuyen su tamaño para  pantallas mas pequeñas*/
+@media screen and (max-width: 820px) {
+    .imgGaleria {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 2rem;
+        transition: height 1s, width 1s;
+
+        &:hover{
+            width: 12rem;
+            height:12rem;
+        }
+    }}
+
+
+/*mediaQuerie del Grid para pantallas mas pequeñas*/
+@media screen and (max-width: 600px) {
+    #guias {
+    grid-template-areas: 
+    "presentacionGuias "
+    "nombreM  "
+    "martin" 
+    "descripcionM"
+    "nombreJ"
+    "jana" 
+    "descripcionJ"
+    "nombreD "
+    "daniela"
+    "descripcionD"
+    "nombreE"
+    "elizabeth" 
+    "descripcionE";
+    }
+    
+}
+    

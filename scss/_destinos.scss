@@ -1,0 +1,52 @@
+/*TOURS*/
+
+#sectionTour{
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    div{
+        margin-bottom: 5rem;
+    }
+}
+
+#argentina{
+    font-size: 2rem;
+    color: whitesmoke;
+    background-color: rgb(33,78, 94);
+    width: 9rem;
+    margin-bottom: 2rem;
+}
+
+.botonGaleria{
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: $bg-secundario;
+  color: $color_titulos;
+  float: right;
+  width: 15rem;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 2px 2px 50px $color-sombra;
+  transition: all 2s;
+
+  &:hover{
+      font-size: 1.2rem;
+      width: 20rem;
+      background-color: $bg-principal;
+      color:$color_titulos;
+}
+}
+
+/*Modificacion en tabla de Bootstrap*/
+.table-success{
+    --bs-table-striped-bg: #f00d221c;
+}
+
+span {
+    color:magenta;
+}
+
+#consultanos{
+    font-weight: bold;
+    text-align: center;
+    }

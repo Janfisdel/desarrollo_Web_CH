@@ -1,0 +1,28 @@
+/*Reset*/
+*{margin:0;
+ padding:0;
+}
+
+html{
+    font-size: $font-size;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background: radial-gradient(pink, lightblue);
+    background-size: cover;
+    color: black;
+    line-height: 1.6;
+    margin-top: 7rem;
+}
+
+ul{
+    list-style-type: none;
+    li{
+        display:inline-block;
+    }
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
