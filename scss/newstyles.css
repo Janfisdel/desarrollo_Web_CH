@@ -199,6 +199,10 @@ footer .icons {
   --bs-table-striped-bg: #f00d221c;
 }
 
+ol li p {
+  margin-bottom: 0px;
+}
+
 span {
   color: magenta;
 }
@@ -317,6 +321,10 @@ span {
   border-radius: 1rem;
 }
 
+#guias__martin--descripcion p {
+  margin-bottom: 0px;
+}
+
 #guias__jana--descripcion {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
@@ -325,6 +333,10 @@ span {
   width: 17rem;
   padding: 0rem 2rem 0rem 2rem;
   border-radius: 1rem;
+}
+
+#guias__jana--descripcion p {
+  margin-bottom: 0px;
 }
 
 #guias__daniela--descripcion {
@@ -337,6 +349,10 @@ span {
   border-radius: 1rem;
 }
 
+#guias__daniela--descripcion p {
+  margin-bottom: 0px;
+}
+
 #guias__elizabeth--descripcion {
   -ms-grid-row: 9;
   -ms-grid-column: 2;
@@ -345,6 +361,10 @@ span {
   width: 17rem;
   padding: 0rem 2rem 0rem 2rem;
   border-radius: 1rem;
+}
+
+#guias__elizabeth--descripcion p {
+  margin-bottom: 0px;
 }
 
 /*CONTACTO*/

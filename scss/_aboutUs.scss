@@ -1,97 +1,103 @@
 /*Quienes somos*/
 
-#guias{
+#guias {
     display: grid;
     width: 80%;
-    margin:auto;
+    margin: auto;
     justify-content: center;
     justify-items: center;
-    grid-template-areas: 
-    "presentacionGuias presentacionGuias "
-    "nombreM  nombreM"
-    "martin descripcionM"
-    "nombreJ nombreJ"
-    "jana descripcionJ"
-    "nombreD nombreD"
-    "daniela descripcionD"
-    "nombreE nombreE"
-    "elizabeth descripcionE";
+    grid-template-areas:
+        "presentacionGuias presentacionGuias "
+        "nombreM  nombreM"
+        "martin descripcionM"
+        "nombreJ nombreJ"
+        "jana descripcionJ"
+        "nombreD nombreD"
+        "daniela descripcionD"
+        "nombreE nombreE"
+        "elizabeth descripcionE";
 
-    div{
+    div {
         padding-left: 2rem;
         padding-right: 2rem;
     }
 }
 
-.guias__foto--dimensiones{
+// p {
+//     margin-bottom: 0px;
+// }
+
+.guias__foto--dimensiones {
     width: 15rem;
     height: 20rem;
     border-radius: 1rem;
     margin-bottom: 2rem;
 }
 
-#guias__presentacion{
-    grid-area:presentacionGuias;
+#guias__presentacion {
+    grid-area: presentacionGuias;
 }
 
-#guias__nombre--martin{
-    grid-area:nombreM;
-}
-#guias__foto--martin{
-    grid-area:martin;
+#guias__nombre--martin {
+    grid-area: nombreM;
 }
 
-#guias__nombre--jana{
+#guias__foto--martin {
+    grid-area: martin;
+}
+
+#guias__nombre--jana {
     grid-area: nombreJ;
 }
 
-#guias__foto--jana{
+#guias__foto--jana {
     grid-area: jana;
 }
 
-#guias__nombre--daniela{
+#guias__nombre--daniela {
     grid-area: nombreD;
 }
 
-#guias__foto--daniela{
+#guias__foto--daniela {
     grid-area: daniela;
 }
 
-#guias__nombre--elizabeth{
-    grid-area:nombreE;
+#guias__nombre--elizabeth {
+    grid-area: nombreE;
 }
 
-#guias__foto--elizabeth{
-    grid-area:elizabeth;
+#guias__foto--elizabeth {
+    grid-area: elizabeth;
 }
 
 
 /*todas las descripciones de los guias son iguales*/
-@mixin description($bg--guia, $width--guia, $padding-guia, $br--guia){
+@mixin description($bg--guia, $width--guia, $padding-guia, $br--guia) {
     background-color: $bg--guia;
     width: $width--guia;
     padding: $padding-guia;
     border-radius: $br--guia;
+    p {
+        margin-bottom: 0px;
+    }
 }
 
-#guias__martin--descripcion{
+#guias__martin--descripcion {
     grid-area: descripcionM;
     @include description($bg-secundario, 17rem, 0rem 2rem 0rem 2rem, 1rem);
 }
 
-#guias__jana--descripcion{
+#guias__jana--descripcion {
     grid-area: descripcionJ;
     @include description($bg-secundario, 17rem, 0rem 2rem 0rem 2rem, 1rem);
 }
 
-#guias__daniela--descripcion{
-    grid-area:descripcionD;
+#guias__daniela--descripcion {
+    grid-area: descripcionD;
     @include description($bg-secundario, 17rem, 0rem 2rem 0rem 2rem, 1rem);
 }
 
-#guias__elizabeth--descripcion{
-    grid-area:descripcionE;
+#guias__elizabeth--descripcion {
+    grid-area: descripcionE;
     @include description($bg-secundario, 17rem, 0rem 2rem 0rem 2rem, 1rem);
 }
-
-
