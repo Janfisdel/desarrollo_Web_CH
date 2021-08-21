@@ -1,0 +1,25 @@
+/*Página Error 404*/
+#error__flex{
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 80%;
+margin:auto;
+justify-content: space-evenly;
+
+
+}
+
+#error__logo{
+    border-radius: 35px;
+    width: 14rem;
+    height: 14rem;
+}
+
+#error__text {
+    h1{
+        font-size: 4rem;
+        color: $color-titulos;
+    }
+    
+}

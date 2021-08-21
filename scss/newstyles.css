@@ -455,4 +455,33 @@ input:focus {
         grid-template-areas: "presentacionGuias " "nombreM  " "martin"  "descripcionM" "nombreJ" "jana"  "descripcionJ" "nombreD " "daniela" "descripcionD" "nombreE" "elizabeth"  "descripcionE";
   }
 }
+
+/*Página Error 404*/
+#error__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#error__logo {
+  border-radius: 35px;
+  width: 14rem;
+  height: 14rem;
+}
+
+#error__text h1 {
+  font-size: 4rem;
+  color: purple;
+}
 /*# sourceMappingURL=newstyles.css.map */
